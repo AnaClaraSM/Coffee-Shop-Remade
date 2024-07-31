@@ -101,11 +101,12 @@ header {
 /* Search Box */
 .search-box {
     position: absolute;
-    top: 100%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%);
     background: var(--bg-color);
     width: 100%;
+    transition: 0.2s all linear; /*Added to smooth the search bar rising (deactivation)*/
 }
 .search-box input {
     padding: 20px;
@@ -122,7 +123,7 @@ header {
 .search-box.active {
     top: 100%;
     box-shadow: var(--box-shadow);
-    transition: 0.2s all linear;
+    transition: 0.2s all linear; /*Added to smooth the search bar descent (activation)*/
 }
 
 
