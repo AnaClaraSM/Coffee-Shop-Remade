@@ -89,4 +89,95 @@ header {
 .header-icon .bx:hover {
     color: var(--main-color);
     transition: 0.2s all linear; 
+}/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* General Style */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Variables */
+:root {
+    --main-color: #bc9667;
+    --second-color: #edeae3;
+    --text-color: #1b1b1b;
+    --bg-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+/* Navigation Bar */
+header {
+    position: fixed; /*Fixed Navbar*/
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10000; /**/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px; /*vertical horiziontal*/
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+
+/* Logo */
+.logo img {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+}
+/* Navigation Links */
+.navbar a {
+   padding: 8px 17px; 
+   color: var(--bg-color);
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+.navbar a:hover {
+    background: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+/* Navigation Icons */
+.header-icon {
+    font-size: ;
+}
+/* Search Box */
+.search-box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--bg-color);
+    width: 100%;
+}
+.search-box input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.search-box input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
 }
