@@ -29,6 +29,9 @@ body {
     color: var(--text-color);
 }
 
+
+/* NAVBAR */
+
 /* Navigation Bar */
 header {
     position: fixed; /*Fixed Navbar*/
@@ -43,10 +46,17 @@ header {
     transition: 0.5s linear;
     background: var(--text-color);
 }
-
 /* Logo */
 .logo img {
     width: 60px;
+}
+/* Nav Menu */
+#menu-icon {
+    color: var(--bg-color);
+    font-size: 24px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none; /*Hides the Menu icon*/
 }
 
 .navbar {
@@ -65,6 +75,18 @@ header {
     border-radius: 0.2rem;
     transition: 0.2s all linear;
 }
+/* Navigation Icons */
 .header-icon {
-    font-size: ;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header-icon .bx {
+    color: var(--bg-color);
+}
+.header-icon .bx:hover {
+    color: var(--main-color);
+    transition: 0.2s all linear; 
 }
