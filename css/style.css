@@ -52,7 +52,10 @@ header {
     align-items: center;
     padding: 18px 100px; /*vertical horiziontal*/
     transition: 0.5s linear;
+}
+header.shadow {
     background: var(--text-color);
+    box-shadow: var(--box-shadow);
 }
 /* Logo */
 .logo img {
@@ -187,7 +190,7 @@ header {
 }
 
 
-/* PRODUCT */
+/* PRODUCTS */
 
 .heading {
     text-align: center;
@@ -251,4 +254,112 @@ header {
     background: var(--main-color);
     color: var(--bg-color);
     transition: 0.2s all linear;
+}
+
+
+/* CUSTOMERS */
+
+.customers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.customers-container .box {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.2s background linear;
+}
+.stars .bx {
+    color: var(--main-color);
+}
+.customers-container .box p {
+    font-size: 0.938rem;
+}
+.customers-container .box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0.5rem; /* 0.5rem 0 0.5rem */
+}
+.customers-container .box img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.customers-container .box:hover {
+    background: var(--second-color);
+    transition: 0.2s all linear;
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social a .bx {
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 0.2rem;
+    /* transition: 0.2s background linear, 0.2s color linear; */
+}
+.social a .bx:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    /* transition: 0.2s all linear; */
+}
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box li a {
+    color: var(--text-color);
+    /* transition: 0.2s color linear; */
+}
+.footer-box li a:hover {
+    color: var(--main-color);
+    /* transition: 0.2s all linear; */
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.contact span {
+    display: flex;
+    align-items: center;
+}
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: var(--second-color);
 }
